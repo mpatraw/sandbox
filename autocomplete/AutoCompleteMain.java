@@ -5,13 +5,7 @@ public class AutoCompleteMain {
 		ac.loadWordFile("/usr/share/dict/words");
 
 
-		for (String word : ac.getWords("hell", 1)) {
-			System.out.println(word);
-		}
-		for (String word : ac.getWords("hell", 1)) {
-			System.out.println(word);
-		}
-		for (String word : ac.getWords("hell", 1)) {
+		for (String word : ac.getCompleteWords("hell", 3)) {
 			System.out.println(word);
 		}
 	}
